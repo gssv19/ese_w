@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>El Salvador Express</title>
+	<!-- Estilos CSS3 -->
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<!-- Fuentes -->
+	<!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet"> -->
+	<script src="js/icons.js"></script>
+</head>
+<body>
+	<!-- Header -->
+	<header>
+		<!-- <a href="#" class="logo">El Salvador Express<span>.</span></a> -->
+		<a href="#" class="logo">
+			<div class="h_logo">
+				<img id="nav_logo" src="./imagenes/logo_amarillo.svg">
+			</div>
+		</a>
+		<div class="menutoggle"></div>
+		<ul class="navigation_items">
+			<li>
+				<a href="#banner" id="item_uno">
+					<span class="icon_nav">
+						<i class="fa fa-home" aria-hidden="true"></i>
+					</span>
+					Inicio
+				</a>
+			</li>
+			<li>
+				<a href="#services" id="item_dos">
+					<span class="icon_nav">
+						<i class="fa fa-plane" aria-hidden="true"></i>
+					</span>
+					Servicios
+				</a>
+			</li>
+			<li>
+				<a href="#oficinas" id="item_tres">
+					<span class="icon_nav">
+						<i class="fa fa-map-signs" aria-hidden="true"></i>
+					</span>
+					Oficinas
+				</a>
+			</li>
+			<li>
+				<a href="#abaut" id="item_cuatro">
+					<span class="icon_nav">
+						<i class="fa fa-users" aria-hidden="true"></i>
+					</span>
+					Nosotros
+				</a>
+			</li>
+			<!-- <li><a href="#testimonials">Testimonial</a></li> -->
+			<li>
+				<a href="#contacto"  id="item_cinco">
+					<span class="icon_nav">
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+					</span>
+					Contacto
+				</a>
+			</li>
+		</ul>
+	</header>
+
+	<!-- Contenedor principal -->
+	<main>
+		<!-- Banner -->
+		<section class="banner" id="banner">
+			<div class="content_banner">
+				<h2>Envía tus encomiendas con nosotros</h2>
+				<p>Con nosotros el amor no tiene fronteras, envía de El salvador a
+					<span class="textR">Houston</span> |
+					<span class="textR">Dallas</span> |
+					<span class="textR">Irving</span> |
+					<span class="textR">Austin</span> |
+					<span class="textR">San Antonio</span> |
+					y todo Estados Unidos y puedes enviar de Estados Unidos a todo El Salvador
+				</p>
+				<a href="#services" class="btn_inicio">Conocer Más</a>
+			</div>
+		</section>
+
+		<!-- Services -->
+		<section class="services fullP" id="services">
+			<div class="title">
+				<h2 class="titleText">Nuestros <span>S</span>ervicios</h2>
+				<br>
+				<p>Tenemos servicios que se acomodan a tus encomiendas.</p>
+			</div>
+			<div class="content_services">
+				<div class="caja_servicio">
+					<div class="imgCS">
+						<img src="imagenes/houston.jpg">
+					</div>
+					<div class="textS">
+						<h3>Viajes a <span class="textRW">Houston</span></h3>
+						<button class="btn_i_services" id="btn_mIHosuton">Más Información</button>
+					</div>
+				</div>
+
+				<div class="caja_servicio">
+					<div class="imgCS">
+						<img src="imagenes/dallas.jpg">
+					</div>
+					<div class="textS">
+						<h3>Viajes a <span class="textRW">Dallas e Irving</span></h3>
+						<button class="btn_i_services" id="btn_mDallasEIrving">Más Información</button>
+					</div>
+				</div>
+
+				<div class="caja_servicio">
+					<div class="imgCS">
+						<img src="imagenes/austin.jpg">
+					</div>
+					<div class="textS">
+						<h3>Viajes a <span class="textRW">Austin</span></h3>
+						<button class="btn_i_services" id="btn_mAustin">Más Información</button>
+					</div>
+				</div>
+
+				<div class="caja_servicio">
+					<div class="imgCS">
+						<img src="imagenes/san_antonio.jpg">
+					</div>
+					<div class="textS">
+						<h3>Viajes a <span class="textRW">San Antonio</span></h3>
+						<button class="btn_i_services" id="btn_mSanAntonio">Más Información</button>
+					</div>
+				</div>
+
+				<div class="caja_servicio">
+					<div class="imgCS">
+						<img src="imagenes/aerea.jpg">
+					</div>
+					<div class="textS">
+						<h3>Servicios de <span class="textRW">cajas</span> vía aérea</h3>
+						<button class="btn_i_services" id="btn_mCa">Más Información</button>
+					</div>
+				</div>
+
+				<div class="caja_servicio">
+					<div class="imgCS">
+						<img src="imagenes/maritima.jpg">
+					</div>
+					<div class="textS">
+						<h3>Servicios de <span class="textRW">cajas</span> vía marítima</h3>
+						<button class="btn_i_services" id="btn_mCm">Más Información</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- MODALES -->
+		<div class="modal" id="mHouston">
+			<div class="modal_content">
+				<div class="modal_target" id="modal_targetH">
+					<div class="modal_header">
+						<h2><span class="resaltar_naranja"><i class="fa fa-plane" aria-hidden="true"></i></span>Viajes Houston</h2>
+						<span id="btn_cMHouston"><i class="fa fa-times"></i></span>
+					</div>
+					<div class="modal_body">
+						<p>Te ofrecemos viajes a <span class="resaltar">Houston</span> todas las semanas de nuestro querido El Salvador hacia los Estados Unidos y de Estados Unidos hacia El Salvador, llevamos y traemos tus encomiendas en un máximo de 8 días</p>
+
+						<p>Si resides en Houston y deseas enviarle una encomienda a tu familia de El Salvador, cuenta con nosotros, cubrimos todo el territorio nacional</p>
+
+						<h4>Nuestras tarifas:</h4>
+
+						<p>Por encomiendas de ropa, calzado, alimentos, lociones, maquillaje el costo es unicamente de <span class="resaltar_verde">$7.00</span> por cada libra</p>
+
+						<p>Por encomiendas joyería, bisutería, cinchos, documentos etc. se cobran por detalle, puede consultarnos sin nigun problema le atenderemos con todo gusto :)
+						</p>
+						<div>
+							<h4>Teléfono & WhatsApp</h4>
+							<span class="resaltar_verde"><i class="fa fa-phone"></i> 832 - 938 - 0415</span>
+						</div>
+						<div>
+							<h4>Ubicación en Houston</h4>
+							<span class="resaltar_anaranjado"><i class="fa fa-map-marker"></i>7801 Hillcroft St. Suite #3 Houston Texas 77081</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" id="mDallasEIrving">
+			<div class="modal_content">
+				<div class="modal_target">
+					<div class="modal_header">
+						<h2><span class="resaltar_naranja"><i class="fa fa-plane" aria-hidden="true"></i></span>Viajes Dallas & Irving</h2>
+						<span id="btn_cMDallasEIrving"><i class="fa fa-times"></i></span>
+					</div>
+					<div class="modal_body">
+						<p>Te ofrecemos viajes a <span class="resaltar">Dallas & Irving</span> todas las semanas de nuestro querido El Salvador hacia los Estados Unidos y de Estados Unidos hacia El Salvador, llevamos y traemos tus encomiendas en un máximo de 8 días</p>
+
+						<p>Si resides en Dallas & Irving y deseas enviarle una encomienda a tu familia de El Salvador, cuenta con nosotros, cubrimos todo el territorio nacional</p>
+
+						<h4>Nuestras tarifas:</h4>
+
+						<p>Por encomiendas de ropa, calzado, alimentos, lociones, maquillaje el costo es unicamente de <span class="resaltar_verde">$7.00</span> por cada libra</p>
+
+						<p>Por encomiendas joyería, bisutería, cinchos, documentos etc. se cobran por detalle, puede consultarnos sin nigun problema le atenderemos con todo gusto :)
+						</p>
+						<div>
+							<h4>Teléfono & WhatsApp</h4>
+							<span class="resaltar_verde"><i class="fa fa-phone"></i> 469 - 400 - 0738</span>
+						</div>
+						<div>
+							<h4>Ubicación en Dallas & Irving</h4>
+							<span class="resaltar_anaranjado"><i class="fa fa-map-marker"></i>2023 E State Hwy 356 Irving, TX 75060 EE. UU.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" id="mAustin">
+			<div class="modal_content">
+				<div class="modal_target">
+					<div class="modal_header">
+						<h2><span class="resaltar_naranja"><i class="fa fa-plane" aria-hidden="true"></i></span>Viajes Austin</h2>
+						<span id="btn_cMAustin"><i class="fa fa-times"></i></span>
+					</div>
+					<div class="modal_body">
+						<p>Te ofrecemos viajes a <span class="resaltar">Austin</span> cada 15 días (Dos veces por mes) de nuestro querido El Salvador hacia los Estados Unidos y de Estados Unidos hacia El Salvador, llevamos y traemos tus encomiendas en un máximo de 8 días</p>
+
+						<p>Si resides en Austin y deseas enviarle una encomienda a tu familia de El Salvador, cuenta con nosotros, cubrimos todo el territorio nacional</p>
+
+						<h4>Nuestras tarifas:</h4>
+
+						<p>Por encomiendas de ropa, calzado, alimentos, lociones, maquillaje el costo es unicamente de <span class="resaltar_verde">$7.00</span> por cada libra</p>
+
+						<p>Por encomiendas joyería, bisutería, cinchos, documentos etc. se cobran por detalle, puede consultarnos sin nigun problema le atenderemos con todo gusto :)
+						</p>
+						<div>
+							<h4>Teléfono & WhatsApp</h4>
+							<span class="resaltar_verde"><i class="fa fa-phone"></i> 512 - 817 - 9112</span>
+						</div>
+						<div>
+							<h4>Ubicación en Austin</h4>
+							<span class="resaltar_anaranjado"><i class="fa fa-map-marker"></i>100 E Starling Dr Austin, TX 78753 États-Unis</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" id="mSanAntonio">
+			<div class="modal_content">
+				<div class="modal_target">
+					<div class="modal_header">
+						<h2><span class="resaltar_naranja"><i class="fa fa-plane" aria-hidden="true"></i></span>Viajes SanAntonio</h2>
+						<span id="btn_cMSanAntonio"><i class="fa fa-times"></i></span>
+					</div>
+					<div class="modal_body">
+						<p>Te ofrecemos viajes a <span class="resaltar">San Antonio</span> cada fin de mes de nuestro querido El Salvador hacia los Estados Unidos y de Estados Unidos hacia El Salvador, llevamos y traemos tus encomiendas en un máximo de 8 días</p>
+
+						<p>Si resides en San Antonio y deseas enviarle una encomienda a tu familia de El Salvador, cuenta con nosotros, cubrimos todo el territorio nacional</p>
+
+						<h4>Nuestras tarifas:</h4>
+
+						<p>Por encomiendas de ropa, calzado, alimentos, lociones, maquillaje el costo es unicamente de <span class="resaltar_verde">$7.00</span> por cada libra</p>
+
+						<p>Por encomiendas joyería, bisutería, cinchos, documentos etc. se cobran por detalle, puede consultarnos sin nigun problema le atenderemos con todo gusto :)
+						</p>
+						<div>
+							<h4>Teléfono & WhatsApp</h4>
+							<span class="resaltar_verde"><i class="fa fa-phone"></i> 512 - 817 - 9112</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" id="mCa">
+			<div class="modal_content">
+				<div class="modal_target">
+					<div class="modal_header">
+						<h2><span class="resaltar_naranja"><i class="fa fa-plane" aria-hidden="true"></i></span>Cajas Vía Aérea</h2>
+						<span id="btn_cMCa"><i class="fa fa-times"></i></span>
+					</div>
+					<div class="modal_body">
+						<p>Si resides en Houston, Dallas, Irving, Austin o San Antonio y deseas enviarle una caja a tu familia de El Salvador, cuenta con nosotros. Te ofrecemos nuestro servicio de <span class="resaltar">Cajas Vía Aérea</span>, cubrimos todo el territorio nacional, entregamos de 3 a 4 semanas aproximadamente</p>
+
+						<h4>Contamos con dos medidas de cajas:</h4>
+
+						<p>La caja pequeña la cual mide 26" X 26" X 28" (Pulgadas) con un valor de <span class="resaltar_verde">$450.00</span> y puede pesar entre 110 libras -- 130 Libras<br>La caja grande la cual mide 34" X 28" X 28" (Pulgadas) con un valor de <span class="resaltar_verde">$500.00</span> y puede pesar entre *130 libras -- 150 Libras*</p>
+
+						<h4>Restricciones:</h4>
+						<p>
+							- No se pueden Electrónicos (Se puede enviar pero es bajo su propio riesgo)<br>
+							- 10 vitaminas como máximo<br>
+							- 15 perfumes como máximo<br>
+							- 20 cremas corporales<br>
+							- No alimentos perercederos
+						</p>
+						<div>
+							<h4>Teléfono & WhatsApp</h4>
+							<span class="resaltar_verde"><i class="fa fa-phone"></i>  832 - 938 - 0415</span>
+						</div>
+						<div>
+							<h4>Recibimos Cajas:</h4>
+							<span class="resaltar_anaranjado">Exclusivo para todo el estado de TEXAS</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" id="mCm">
+			<div class="modal_content">
+				<div class="modal_target">
+					<div class="modal_header">
+						<h2><span class="resaltar_naranja"><i class="fa fa-plane" aria-hidden="true"></i></span>Cajas Vía Marítima</h2>
+						<span id="btn_cMCm"><i class="fa fa-times"></i></span>
+					</div>
+					<div class="modal_body">
+						<p>Si resides en Houston, Dallas, Irving, Austin o San Antonio y deseas enviarle una caja a tu familia de El Salvador, cuenta con nosotros. Te ofrecemos nuestro servicio de <span class="resaltar">Cajas Vía Aérea</span>, cubrimos todo el territorio nacional, entregamos en 8 semanas aproximadamente</p>
+
+						<h4>Contamos con dos medidas de cajas:</h4>
+
+						<p>La caja pequeña la cual mide 26" X 26" X 28" (Pulgadas) con un valor de <span class="resaltar_verde">$350.00</span> y puede pesar hasta un máximo 200 Libras<br>La caja grande la cual mide 34" X 28" X 28" (Pulgadas) con un valor de <span class="resaltar_verde">$400.00</span> y puede pesar hasta un máximo 225 libras</p>
+
+						<h4>Restricciones:</h4>
+						<p>
+							- No se pueden Electrónicos (Se puede enviar pero es bajo su propio riesgo)<br>
+							- 10 vitaminas como máximo<br>
+							- 15 perfumes como máximo<br>
+							- 20 cremas corporales<br>
+							- No alimentos perercederos
+						</p>
+						<div>
+							<h4>Teléfono & WhatsApp</h4>
+							<span class="resaltar_verde"><i class="fa fa-phone"></i>  832 - 938 - 0415</span>
+						</div>
+						<div>
+							<h4>Recibimos Cajas:</h4>
+							<span class="resaltar_anaranjado">Exclusivo para todo el estado de TEXAS</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- oficinas -->
+		<section id="oficinas">
+			<div class="title">
+				<h2 class="titleText">Nuestras <span>O</span>ficinas</h2>
+				<p>Visita nuestras oficinas en las diferentes ciudades de Estados Unidos y El Salvador.</p>
+			</div>
+			<div class="linea_oficinas">
+				<ul>
+					<li>
+						<div class="content_ofi">
+							<div class="content_iframe">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1217.0908745972374!2d-97.69059532691294!3d30.366496512542426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644c9665e89b4af%3A0x26b9d79c25a4d153!2s100%20E%20Starling%20Dr%2C%20Austin%2C%20TX%2078753%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2ssv!4v1619296011957!5m2!1sfr!2ssv"></iframe>
+							</div>
+							<br>
+							<div class="detalles_oficina">
+								<span class="icono"><i class="fa fa-map-marker"></i></span>
+								<span class="nombre">Dirección:</span>
+								<span class="detalle">100 E Starling Dr Austin, TX 78753 États-Unis</span>
+							</div>
+							<div class="detalles_oficina">
+								<span class="icono"><i class="fa fa-phone"></i></span>
+								<span class="nombre">Teléfono:</span>
+								<span class="detalle">512 - 817 - 9112</span>
+							</div>
+							<div class="detalles_oficina_button">
+								<span class="icono_btn_maps"><i class="fa fa-map-pin" aria-hidden="true"></i></span>
+								<button class="btn_maps" id="btn_map_austin">Ir a Google Maps</button>
+							</div>
+						</div>
+						<div class="ofiName ofi_uno">
+							<h4>Oficina Austin Texas - Estados Unidos</h4>
+						</div>
+					</li>
+					<li>
+						<div class="content_ofi">
+							<div class="content_iframe">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3353.3277214698956!2d-96.91962258511998!3d32.81008058096202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9cb27ae89689%3A0x87b9be16dfd0a0d8!2s2023%20E%20State%20Hwy%20356%2C%20Irving%2C%20TX%2075060%2C%20EE.%20UU.!5e0!3m2!1ses!2ssv!4v1619295182303!5m2!1ses!2ssv"></iframe>
+							</div>
+							<br>
+							<div class="detalles_oficina">
+								<span class="icono"><i class="fa fa-map-marker"></i></span>
+								<span class="nombre">Dirección:</span>
+								<span class="detalle">2023 E State Hwy 356 Irving, TX 75060 EE. UU.</span>
+							</div>
+							<div class="detalles_oficina">
+								<span class="icono"><i class="fa fa-phone"></i></span>
+								<span class="nombre">Teléfono:</span>
+								<span class="detalle">469 - 400 - 0738</span>
+							</div>
+							<div class="detalles_oficina_button">
+								<span class="icono_btn_maps"><i class="fa fa-map-pin" aria-hidden="true"></i></span>
+								<button class="btn_maps" id="btn_map_irving">Ir a Google Maps</button>
+							</div>
+						</div>
+						<div class="ofiName ofi_dos">
+							<h4>Oficina Dallas Texas & Irving Texas - Estados Unidos</h4>
+						</div>
+					</li>
+					<li>
+						<div class="content_ofi">
+							<div class="content_iframe">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d611.3668434982843!2d-88.3487063435942!3d13.354160176808366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2ssv!4v1619637580881!5m2!1sfr!2ssv"></iframe>
+							</div>
+							<br>
+							<div class="detalles_oficina">
+								<span class="icono"><i class="fa fa-map-marker"></i></span>
+								<span class="nombre">Dirección:</span>
+								<span class="detalle">Calle desvió de gasolinera Texaco, entre la 1° calle oriente y calle 14 de Diciembre frente a la Huella De Oro</span>
+							</div>
+							<div class="detalles_oficina">
+								<span class="icono"><i class="fa fa-phone"></i></span>
+								<span class="nombre">Teléfono:</span>
+								<span class="detalle">503 - 7222 - 3329</span>
+							</div>
+							<div class="detalles_oficina_button">
+								<span class="icono_btn_maps"><i class="fa fa-map-pin" aria-hidden="true"></i></span>
+								<button class="btn_maps" id="btn_map_et">Ir a Google Maps</button>
+							</div>
+						</div>
+						<div class="ofiName ofi_tres">
+							<h4>Oficina El Transito San Miguel - El Salvador</h4>
+						</div>
+					</li>
+					<li>
+						<div class="content_ofi">
+							<div class="content_iframe">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.8779510080712!2d-95.49482768520613!3d29.694317982011036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c216965884c3%3A0x8edd68c59ff063c9!2s7801%20Hillcroft%20St%20%233%2C%20Houston%2C%20TX%2077081%2C%20EE.%20UU.!5e0!3m2!1ses!2ssv!4v1619294630386!5m2!1ses!2ssv"></iframe>
+							</div>
+							<br>
+							<div class="detalles_oficina">
+								<span class="icono"><i class="fa fa-map-marker"></i></span>
+								<span class="nombre">Dirección:</span>
+								<span class="detalle">7801 Hillcroft St. Suite #3 Houston Texas 77081</span>
+							</div>
+							<div class="detalles_oficina">
+								<span class="icono"><i class="fa fa-phone"></i></span>
+								<span class="nombre">Teléfono:</span>
+								<span class="detalle">832 - 848 - 2260</span>
+							</div>
+							<div class="detalles_oficina_button">
+								<span class="icono_btn_maps"><i class="fa fa-map-pin" aria-hidden="true"></i></span>
+								<button class="btn_maps" id="btn_map_houston">Ir a Google Maps</button>
+							</div>
+						</div>
+						<div class="ofiName ofi_cuatro">
+							<h4>Oficina Houston Texas - Estados Unidos</h4>
+						</div>
+					</li>
+					<li>
+						<div class="content_ofi">
+							<div class="content_iframe">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d343.15840265516755!2d-88.56862218418435!3d13.325741377877277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2ssv!4v1619638346680!5m2!1sfr!2ssv"></iframe>
+							</div>
+							<br>
+							<div class="detalles_oficina">
+								<span class="icono"><i class="fa fa-map-marker"></i></span>
+								<span class="nombre">Dirección:</span>
+								<span class="detalle">4° Avenida Sur, frente a entrada del Mercado Municipal de Jiquilisco, Usulután.</span>
+							</div>
+							<div class="detalles_oficina">
+								<span class="icono"><i class="fa fa-phone"></i></span>
+								<span class="nombre">Teléfono:</span>
+								<span class="detalle">503 - 7500 - 6873</span>
+							</div>
+							<div class="detalles_oficina_button">
+								<span class="icono_btn_maps"><i class="fa fa-map-pin" aria-hidden="true"></i></span>
+								<button class="btn_maps" id="btn_map_jiquilisco">Ir a Google Maps</button>
+							</div>
+						</div>
+						<div class="ofiName ofi_cinco">
+							<h4>Oficina Jiquilisco Usulután - El Salvador</h4>
+						</div>
+					</li>
+					<li>
+						<div class="content_ofi">
+							<div class="content_iframe">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3881.4414119100124!2d-88.50588215003066!3d13.384971690539446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7b484423f1d491%3A0xc00c876491c87f74!2sTienda%20Jakie!5e0!3m2!1sfr!2ssv!4v1619638746394!5m2!1sfr!2ssv"></iframe>
+							</div>
+							<br>
+							<div class="detalles_oficina">
+								<span class="icono"><i class="fa fa-map-marker"></i></span>
+								<span class="nombre">Dirección:</span>
+								<span class="detalle">Tienda Jakie, 6° Calle Oriente y Carretera de Ozatlan a El Delirio, Ozatlán, Usulután</span>
+							</div>
+							<div class="detalles_oficina">
+								<span class="icono"><i class="fa fa-phone"></i></span>
+								<span class="nombre">Teléfono:</span>
+								<span class="detalle">503 - 7500 - 6873</span>
+							</div>
+							<div class="detalles_oficina_button">
+								<span class="icono_btn_maps"><i class="fa fa-map-pin" aria-hidden="true"></i></span>
+								<button class="btn_maps" id="btn_map_ozatlan">Ir a Google Maps</button>
+							</div>
+						</div>
+						<div class="ofiName ofi_seis">
+							<h4>Oficina Ozatlan Usulután - El Salvador</h4>
+						</div>
+					</li>
+					<li>
+						<div class="content_ofi">
+							<div class="content_iframe">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d970.3854915496805!2d-88.41448753279582!3d13.378732444460756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDIyJzQ1LjMiTiA4OMKwMjQnNTAuMCJX!5e0!3m2!1sfr!2ssv!4v1619302847345!5m2!1sfr!2ssv"></iframe>
+							</div>
+							<br>
+							<div class="detalles_oficina">
+								<span class="icono"><i class="fa fa-map-marker"></i></span>
+								<span class="nombre">Dirección:</span>
+								<span class="detalle">2° Calle poniente esquina con la 5° Avenida Sur, a un costado de la Alcaldía Municipal de Santa Elena, Usulután</span>
+							</div>
+							<div class="detalles_oficina">
+								<span class="icono"><i class="fa fa-phone"></i></span>
+								<span class="nombre">Teléfono:</span>
+								<span class="detalle">503 - 7873 - 0918</span>
+							</div>
+							<div class="detalles_oficina_button">
+								<span class="icono_btn_maps"><i class="fa fa-map-pin" aria-hidden="true"></i></span>
+								<button class="btn_maps" id="btn_map_se">Ir a Google Maps</button>
+							</div>
+						</div>
+						<div class="ofiName ofi_siete">
+							<h4>Oficina Santa Elena Usulután - El Salvador</h4>
+						</div>
+					</li>
+					<li>
+						<div class="content_ofi">
+							<div class="content_iframe">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1154.148630455195!2d-88.43990991174716!3d13.345437444258359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7b39d32524a2d5%3A0x9cb34b1aeffff130!2sGlobal%20Shopping!5e0!3m2!1sfr!2ssv!4v1619302936767!5m2!1sfr!2ssv"></iframe>
+							</div>
+							<br>
+							<div class="detalles_oficina">
+								<span class="icono"><i class="fa fa-map-marker"></i></span>
+								<span class="nombre">Dirección:</span>
+								<span class="detalle">2° Calle Oriente, en medio de Hospital Metropol y Tienda Galo Centro, local #3 Usulután, Usulután</span>
+							</div>
+							<div class="detalles_oficina">
+								<span class="icono"><i class="fa fa-phone"></i></span>
+								<span class="nombre">Teléfono:</span>
+								<span class="detalle">503 - 7588 - 7721</span>
+							</div>
+							<div class="detalles_oficina_button">
+								<span class="icono_btn_maps"><i class="fa fa-map-pin" aria-hidden="true"></i></span>
+								<button class="btn_maps" id="btn_map_usulutan">Ir a Google Maps</button>
+							</div>
+						</div>
+						<div class="ofiName ofi_ocho">
+							<h4>Oficina Usulután - El Salvador</h4>
+						</div>
+					</li>
+					<div style="clear: both;"></div>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<!-- Testimonial -->
+	<section class="testimonials" id="abaut">
+		<div class="title white">
+			<h2 class="titleText">Sobre <span>N</span>osotros</h2>
+			<p>Llevando encomiendas desde nuestro querido país El Salvador hacia nuestros compatriotas en los Estados Unidos.</p>
+		</div>
+		<div class="content_textimonials">
+			<div class="caja_testimonial">
+				<div class="imgCT">
+					<i class="fa fa-bullseye"></i>
+				</div>
+				<div class="textST">
+					<h3>MISIÓN</h3>
+					<p>Ofrecer un servicio personalizado de calidad y confiabilidad, a través de la buena atención de nuestro personal debidamente capacitado, entregando encomiendas, a precios accesibles, logrando superar las expectativas de nuestros clientes.</p>
+				</div>
+			</div>
+
+			<div class="caja_testimonial">
+				<div class="imgCT">
+					<i class="fa fa-plane"></i>
+				</div>
+				<div class="textST">
+					<h3>VISIÓN</h3>
+					<p>Llegar ser una Agencia de Encomiendas reconocida en nuestra región, por la confianza y seguridad que le ofrecemos a nuestros clientes,  presentando innovadores servicios y asegurando entregas estables, promoviendo un ambiente de buenas relaciones y obteniendo la mayor satisfacción de nuestros clientes.</p>
+				</div>
+			</div>
+
+			<div class="caja_testimonial">
+				<div class="imgCT">
+					<i class="fa fa-diamond"></i>
+				</div>
+				<div class="textST">
+					<h3>NUESTROS VALORES</h3>
+					<p>
+						<li>Amabilidad</li>
+						<li>Calidad y excelencia en el servicio</li>
+						<li>Puntualidad</li>
+						<li>Confiabilidad</li>
+						<li>Honestidad</li>
+						<li>Innovación e inspiración</li>
+						<li>Integridad y respeto</li>
+						<li>Pasión y compromiso</li>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contacto -->
+	<section class="contacto" id="contacto">
+		<div class="title">
+			<h2 class="titleText"><span>C</span>ontactanos</h2>
+			<p>Queremos saber de tus opiniones o puedes consultarnos acerca de nuestros servicios.</p>
+		</div>
+		<div class="content_contacts">
+			<div class="box_contact">
+				<div class="contactForm">
+					<h3>Envíanos un mensaje</h3>
+					<form action="https://formspree.io/f/mqkwpone" method="POST" id="formContactESE" autocomplete="off">
+						<div class="caja_imput">
+							<input name="ese_nombre" id="ese_nombre" class="init_mayus" type="text" placeholder="Nombre" required>
+							<span id="msm_cInvalido_nombre" class="campo_invalido">Entrada invalida*</span>
+						</div>
+						<div class="caja_imput">
+							<input name="ese_asunto" id="ese_asunto" type="text" placeholder="Asunto" required>
+							<span id="msm_cInvalido_asunto" class="campo_invalido">Entrada invalida*</span>
+						</div>
+						<div class="caja_imput">
+							<input name="ese_email" id="ese_email" type="text" placeholder="E-mail | Teléfono" required>
+							<span id="msm_cInvalido_ct" class="campo_invalido">Entrada invalida*</span>
+						</div>
+						<div class="caja_imput">
+							<textarea name="ese_mensaje" id="ese_mensaje" placeholder="Mensaje" required></textarea>
+							<span id="msm_cInvalido_mensaje" class="campo_invalido">Entrada invalida*</span>
+						</div>
+						<div class="caja_imput" id="btn_c_submit_contact">
+							<input id="btn_eviar_c" type="submit" value="Envíar">
+						</div>
+					</form>
+					<div class="gracias_contac" id="msm_gracias_contact">
+						<h4>Muchas gracias por escrbirnos <span class="icon_gracias_contact"><i class="fa fa-check" aria-hidden="true"></i></span></h4>
+					</div>
+				</div>
+			</div>
+			<div class="box_contact">
+				<div class="info_detll">
+					<span class="c_iit"><i class="fa fa-whatsapp"></i></span>
+					<span class="c_in">Central El Salvador:</span>
+					<span class="c_id">7500 -6873</span>
+				</div>
+				<div class="info_detll">
+					<span class="c_iid"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+					<span class="c_in">Dirección:</span>
+					<span class="c_id">2° Calle poniente esquina con la 5° Avenida Sur, a un costado de la Alcaldía Municipal de Santa Elena, Usulután</span>
+				</div>
+				<div class="info_detll">
+					<span class="c_iih"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+					<span class="c_in">Horario de atención:</span>
+					<span class="c_id">Lunes a Domingos : 8:00 a. m. - 5:00 p. m.</span>
+				</div>
+				<hr>
+				<div class="info_detll">
+					<span class="c_iit"><i class="fa fa-whatsapp"></i></span>
+					<span class="c_in">Estados Unidos:</span>
+					<span class="c_id">832 - 848 - 2260</span>
+				</div>
+				<div class="info_detll">
+					<span class="c_iid"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+					<span class="c_in">Dirección:</span>
+					<span class="c_id">7801 Hillcroft St. Suite #3 Houston Texas 77081</span>
+				</div>
+				<div class="info_detll">
+					<span class="c_iih"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+					<span class="c_in">Horario de atención:</span>
+					<span class="c_id">Lunes a Domingos : 9:00 a. m. - 7:00 p. m.</span>
+				</div>
+				<hr>
+				<div class="c_logo">
+					<div class="c_i">
+						<img src="imagenes/logo_azul.svg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Pie de pagina -->
+	<div class="copyrightText">
+		<p>Copyright 2021 <a href="#">El Salvador Express</a>. All Right Reserved</p>
+	</div>
+
+	<!-- Scripts JS -->
+	<script type="text/javascript" src="js/principal.js"></script>
+</body>
+</html>
