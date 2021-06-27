@@ -47,85 +47,6 @@ document.getElementById('item_cinco').addEventListener('click', () => {
 	document.querySelector('.navigation_items').classList.toggle('active');
 });
 
-// MODALES ACCTIONS...
-// Houston
-const btn_mHouston = document.getElementById('btn_mIHosuton');
-const btn_close_mHouston = document.getElementById('btn_cMHouston');
-const vm_mHouston = document.getElementById('mHouston');
-
-btn_mIHosuton.addEventListener('click', () => {
-	vm_mHouston.classList.add('mActive');
-});
-
-btn_close_mHouston.addEventListener('click', () => {
-	vm_mHouston.classList.remove('mActive');
-});
-
-// Dallas e Irving
-const btn_mDallasEIrving = document.getElementById('btn_mDallasEIrving');
-const btn_close_mDallasEIrving = document.getElementById('btn_cMDallasEIrving');
-const vm_mDallasEIrving = document.getElementById('mDallasEIrving');
-
-btn_mDallasEIrving.addEventListener('click', () => {
-	vm_mDallasEIrving.classList.add('mActive');
-});
-
-btn_close_mDallasEIrving.addEventListener('click', () => {
-	vm_mDallasEIrving.classList.remove('mActive');
-});
-
-// Austin
-const btn_mAustin = document.getElementById('btn_mAustin');
-const btn_close_mAustin = document.getElementById('btn_cMAustin');
-const vm_mAustin = document.getElementById('mAustin');
-
-btn_mAustin.addEventListener('click', () => {
-	vm_mAustin.classList.add('mActive');
-});
-
-btn_close_mAustin.addEventListener('click', () => {
-	vm_mAustin.classList.remove('mActive');
-});
-
-// San Antonio
-const btn_mSanAntonio = document.getElementById('btn_mSanAntonio');
-const btn_close_mSanAntonio = document.getElementById('btn_cMSanAntonio');
-const vm_mSanAntonio = document.getElementById('mSanAntonio');
-
-btn_mSanAntonio.addEventListener('click', () => {
-	vm_mSanAntonio.classList.add('mActive');
-});
-
-btn_close_mSanAntonio.addEventListener('click', () => {
-	vm_mSanAntonio.classList.remove('mActive');
-});
-
-// cajas via aerea...
-const btn_mCa = document.getElementById('btn_mCa');
-const btn_close_mCa = document.getElementById('btn_cMCa');
-const vm_mCa = document.getElementById('mCa');
-
-btn_mCa.addEventListener('click', () => {
-	vm_mCa.classList.add('mActive');
-});
-
-btn_close_mCa.addEventListener('click', () => {
-	vm_mCa.classList.remove('mActive');
-});
-
-// cajas via maritima...
-const btn_mCm = document.getElementById('btn_mCm');
-const btn_close_mCm = document.getElementById('btn_cMCm');
-const vm_mCm = document.getElementById('mCm');
-
-btn_mCm.addEventListener('click', () => {
-	vm_mCm.classList.add('mActive');
-});
-
-btn_close_mCm.addEventListener('click', () => {
-	vm_mCm.classList.remove('mActive');
-});
-
 /* BOTONES DE LOS MAPAS */
 // Austin
 const btn_map_austin = document.getElementById('btn_map_austin');
@@ -148,42 +69,42 @@ btn_map_et.addEventListener('click', () => {
 	window.open('https://goo.gl/maps/3eBHoKWhfEK4qan88', '_blank');
 });
 
-// El Houston
+// Houston
 const btn_map_houston = document.getElementById('btn_map_houston');
 
 btn_map_houston.addEventListener('click', () => {
 	window.open('https://goo.gl/maps/PuFPMeA6s2KW2REM9', '_blank');
 });
 
-// El Jiquilisco
+// Jiquilisco
 const btn_map_jiquilisco = document.getElementById('btn_map_jiquilisco');
 
 btn_map_jiquilisco.addEventListener('click', () => {
 	window.open('https://goo.gl/maps/tg1SyTg9Kqpk2arY6', '_blank');
 });
 
-// El Ozatlan
+// Ozatlan
 const btn_map_ozatlan = document.getElementById('btn_map_ozatlan');
 
 btn_map_ozatlan.addEventListener('click', () => {
 	window.open('https://goo.gl/maps/eGikxkJmkTiAPTX86', '_blank');
 });
 
-// El SE
+// Santa Elena
 const btn_map_se = document.getElementById('btn_map_se');
 
 btn_map_se.addEventListener('click', () => {
 	window.open('https://goo.gl/maps/Dzg6KauwubEapnuh9', '_blank');
 });
 
-// El Usulutan
+// Usulután
 const btn_map_usulutan = document.getElementById('btn_map_usulutan');
 
 btn_map_usulutan.addEventListener('click', () => {
 	window.open('https://goo.gl/maps/gq1mwgEY59d85WrY7', '_blank');
 });
 
-/* FORMULARIO DE CONTACTO */
+/* FORMULARIO DE CONTACTO - ENVIO DE DATOS */
 const form_contact = document.querySelector('#formContactESE');
 
 form_contact.addEventListener('submit',handlesSubmit);
@@ -278,6 +199,7 @@ input_mensaje.addEventListener('input', () => {
 	validSubmit(); // EJECUTAMOS LA VALIDACION DEL BOTON DE ENVIAR...
 });
 
+/* FUNCION PARA LA VALIDACION DEL FORMULARIO */
 const btn_eviar_c = document.getElementById('btn_eviar_c');
 
 function validSubmit() {
@@ -294,3 +216,6 @@ function validSubmit() {
 }
 
 validSubmit();
+
+/* ANIMACIONES CON FRAMEWORK AOS */
+AOS.init();
