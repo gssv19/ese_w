@@ -6,11 +6,15 @@
     --main_color_shadow: rgba(0, 69, 172, 0.3);
     --color_button_hover: rgb(32, 122, 255);
     --color_dark: #1d2231;
+    --color_desabilitado: rgba(96, 125, 139, 1);
     /*--text_grey: #8390a2;*/
     --text_grey: #525869;
     --title_services: rgba(33, 84, 160, 1);
     --color_white: rgba(255, 255, 255, 1);
     --color_amarillo: rgba(255, 255, 0, 1);
+    --color_whatsapp: rgba(0, 177, 6, 1);
+    --color_copiar: rgba(185, 0, 45, 1);
+    --color_copiarDir: rgba(230, 127, 0, 1);
 }
 
 * {
@@ -244,6 +248,7 @@ section {
 
 .fila_servicio .info_servicio h4,
 .fila_servicio_par .info_servicio h4 {
+    margin-bottom: 5px;
     font-size: 16px;
     color: var(--title_services);
 }
@@ -303,7 +308,64 @@ section {
 }
 
 .info_tel_dir {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.contacto_telefono {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+.contacto_telefono .contacto_llamada,
+.contacto_telefono .contacto_whatsapp,
+.contacto_telefono .contacto_copiar,
+.contacto_telefono .contacto_copiarDir {
+    font-size: 14px;
+    color: var(--text_grey);
+    text-transform: capitalize;
+    padding: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: 1px solid var(--color_desabilitado);
+    color: var(--color_desabilitado);
+}
+
+.contacto_telefono .contacto_llamada:hover {
+    letter-spacing: 3px;
+    border: 1px solid var(--main_color);
+    color: var(--main_color);
+    transition: 0.5s;
+}
+
+.contacto_telefono .contacto_whatsapp:hover {
+    letter-spacing: 3px;
+    border: 1px solid var(--color_whatsapp);
+    color: var(--color_whatsapp);
+    transition: 0.5s;
+}
+
+.contacto_telefono .contacto_copiar:hover {
+    letter-spacing: 3px;
+    border: 1px solid var(--color_copiar);
+    color: var(--color_copiar);
+    transition: 0.5s;
+}
+
+.contacto_telefono .contacto_copiarDir:hover {
+    letter-spacing: 3px;
+    border: 1px solid var(--color_copiarDir);
+    color: var(--color_copiarDir);
+    transition: 0.5s;
+}
+
+.hidden {
+    display: none;
 }
 
 /*****************************************************************************
@@ -766,7 +828,7 @@ section.fullP {
 }
 
 .contactForm .caja_imput input[type="submit"]:disabled {
-    background: #607d8b;
+    background: var(--color_desabilitado);
     cursor: none;
     outline: none;
 }
@@ -972,6 +1034,18 @@ hr {
     .h_logo img {
         width: 75%;
     }
+    
+    .contacto_telefono {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .contacto_telefono .contacto_llamada,
+    .contacto_telefono .contacto_whatsapp,
+    .contacto_telefono .contacto_copiar,
+    .contacto_telefono .contacto_copiarDir {
+        margin: 0 0 10px 0;
+    }
 
     /* LINEA DE TIEMPO */
     .linea_oficinas {
@@ -1066,7 +1140,7 @@ hr {
     .fila_servicio .info_servicio,
     .fila_servicio_par .info_servicio {
         padding: 20px;
-        top: -50px;
+        top: -100px;
     }
 
     .fila_servicio .info_servicio h3,
@@ -1078,6 +1152,13 @@ hr {
     .fila_servicio_par .info_servicio h4,
     .fila_servicio .info_servicio p,
     .fila_servicio_par .info_servicio p {
+        font-size: 12px;
+    }
+    
+    .contacto_telefono .contacto_llamada,
+    .contacto_telefono .contacto_whatsapp,
+    .contacto_telefono .contacto_copiar,
+    .contacto_telefono .contacto_copiarDir {
         font-size: 12px;
     }
 
