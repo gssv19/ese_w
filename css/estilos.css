@@ -334,6 +334,8 @@ section {
     text-decoration: none;
     border: 1px solid var(--color_desabilitado);
     color: var(--color_desabilitado);
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .contacto_telefono .contacto_llamada:hover {
@@ -503,7 +505,6 @@ section {
 .content_iframe {
     min-height: 300px;
     height: 300px;
-    /*border: 0.5px solid var(--main_color_shadow);*/
 }
 
 .detalles_oficina {
@@ -523,7 +524,7 @@ section {
 span.icono_btn_maps {
     background: #F44336;
     color: #7b3732;
-    padding: 5px 12px 5px 10px;
+    padding: 5px 12px 6px 10px;
     font-size: 14px;
     margin: 0px -5px 0 0;
 }
@@ -551,6 +552,7 @@ span.icono_btn_maps {
     border: 1px solid var(--color_button_hover);
     background: var(--color_button_hover);
     color: var(--color_white);
+    font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -574,14 +576,60 @@ span.icono_btn_maps {
     border-top: 14px solid transparent;
     border-bottom: 14px solid transparent;
     position: absolute;
-    margin-left: 137px;
+    margin-left: 134px;
+    -moz-margin-start: 139px;
     margin-top: -6px;
     transition: 0.5s;
 }
 
 .btn_maps:hover:before {
     border-left: 20px solid var(--main_color);
-    margin-left: 153px;
+    margin-left: 150px;
+    transition: 0.5s;
+}
+
+.action_ll_wthp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    margin-bottom: 25px
+}
+
+.map_llamada {
+    text-decoration: none;
+    padding: 4px 8px;
+    border: 1px solid var(--color_button_hover);
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--color_button_hover);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.map_whatsapp {
+    text-decoration: none;
+    padding: 4px 8px;
+    border: 1px solid var(--color_whatsapp);
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--color_whatsapp);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.map_llamada:hover {
+    background: var(--color_button_hover);
+    color: var(--color_white);
+    transition: 0.5s;
+}
+
+.map_whatsapp:hover {
+    background: var(--color_whatsapp);
+    color: var(--color_white);
     transition: 0.5s;
 }
 
@@ -866,8 +914,41 @@ hr {
 }
 
 /* MEDIA QUERYS */
-@media (max-width: 991px) {
+@media (max-width: 1133px) {
+    .contacto_telefono .contacto_copiarDir {
+        font-size: 12px;
+        padding: 12px;
+    }
+}
 
+@media (max-width: 1113px) {
+    .contacto_telefono .contacto_copiarDir {
+        font-size: 12px;
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 1063px) {
+    .contacto_telefono .contacto_copiar {
+        font-size: 13px;
+        padding: 11px;
+    }
+}
+
+@media (max-width: 1045px) {
+    .contacto_telefono .contacto_copiar {
+        font-size: 12px;
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .action_ll_wthp {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 991px) {
     header,
     header.stiky {
         padding: 10px 20px;
@@ -988,6 +1069,12 @@ hr {
         text-align: center;
     }
 
+    .contacto_telefono .contacto_copiar,
+    .contacto_telefono .contacto_copiarDir {
+        font-size: 14px;
+        padding: 10px;
+    }
+
     /* SECCION OFICINAS */
     .row {
         flex-direction: column;
@@ -1034,12 +1121,12 @@ hr {
     .h_logo img {
         width: 75%;
     }
-    
+
     .contacto_telefono {
         display: grid;
         grid-template-columns: 1fr;
     }
-    
+
     .contacto_telefono .contacto_llamada,
     .contacto_telefono .contacto_whatsapp,
     .contacto_telefono .contacto_copiar,
@@ -1109,7 +1196,6 @@ hr {
 }
 
 @media (max-width: 480px) {
-
     header .logo,
     header.stiky .logo {
         font-size: 1.3em;
@@ -1154,12 +1240,16 @@ hr {
     .fila_servicio_par .info_servicio p {
         font-size: 12px;
     }
-    
+
     .contacto_telefono .contacto_llamada,
     .contacto_telefono .contacto_whatsapp,
     .contacto_telefono .contacto_copiar,
     .contacto_telefono .contacto_copiarDir {
         font-size: 12px;
+    }
+
+    .resaltar_anaranjado {
+        font-size: 14.8px;
     }
 
     /* SECCION OFICINAS */
@@ -1193,6 +1283,11 @@ hr {
         margin-left: 126px;
     }
 
+    .detalles_oficina span.icono {
+        font-size: 16px;
+    }
+
+
     /* SECCION NOSOTROS */
     .testimonials .content_textimonials {
         grid-template-columns: repeat(auto-fill, 100%);
@@ -1219,5 +1314,28 @@ hr {
     .c_in,
     .c_id {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 297px) {
+    .detalles_oficina_button {
+        margin: 0;
+    }
+
+    .btn_maps {
+        width: 100%;
+        font-size: 13px;
+        transition: 0.5s;
+    }
+
+    span.icono_btn_maps,
+    .btn_maps:before {
+        display: none
+    }
+
+    .action_ll_wthp {
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+        margin-bottom: 10px
     }
 }
