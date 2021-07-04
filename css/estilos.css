@@ -370,6 +370,17 @@ section {
     display: none;
 }
 
+#dirHouston, #dirDallasIrving, #dirAustin {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#dirHouston:hover, #dirDallasIrving:hover, #dirAustin:hover {
+    color: var(--color_button_hover);
+    transition: 0.5s;
+}
+
+
 /*****************************************************************************
 *                             SECCION DE OFICINAS                            *
 *****************************************************************************/
@@ -511,12 +522,7 @@ section {
     text-align: left;
 }
 
-.detalles_oficina_button {
-    text-align: right;
-}
-
-.detalles_oficina,
-.detalles_oficina_button {
+.detalles_oficina {
     font-size: 16px;
     margin: 0 20px 20px 0;
 }
@@ -524,9 +530,9 @@ section {
 span.icono_btn_maps {
     background: #F44336;
     color: #7b3732;
-    padding: 5px 12px 6px 10px;
+    padding: 5px;
+    text-align: center;
     font-size: 14px;
-    margin: 0px -5px 0 0;
 }
 
 .detalles_oficina span {
@@ -546,46 +552,38 @@ span.icono_btn_maps {
     color: var(--text_grey);
 }
 
+.aR_btn_map {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
 .btn_maps {
-    outline: none;
-    padding: 5px 10px;
-    border: 1px solid var(--color_button_hover);
-    background: var(--color_button_hover);
-    color: var(--color_white);
-    font-size: 13px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     cursor: pointer;
-    transition: 0.5s;
-}
-
-.btn_maps:hover {
-    border: 1px solid var(--main_color);
-    background: var(--main_color);
+    background: var(--color_button_hover);
+    padding: 5px;
     color: var(--color_white);
-    letter-spacing: 2px;
+    font-weight: 600;
+    border: none;
+    text-transform: uppercase;
     transition: 0.5s;
 }
 
-.btn_maps:before {
+.punta_btn_map {
     content: '';
     width: 0;
     height: 0;
     border-left: 20px solid var(--color_button_hover);
     border-top: 14px solid transparent;
     border-bottom: 14px solid transparent;
-    position: absolute;
-    margin-left: 134px;
-    -moz-margin-start: 139px;
-    margin-top: -6px;
     transition: 0.5s;
 }
 
-.btn_maps:hover:before {
+.btn_maps:hover {
+    background: var(--main_color);
+}
+
+.btn_maps:hover ~ span.punta_btn_map {
     border-left: 20px solid var(--main_color);
-    margin-left: 150px;
-    transition: 0.5s;
 }
 
 .action_ll_wthp {
@@ -944,11 +942,13 @@ hr {
 
 @media (max-width: 1024px) {
     .action_ll_wthp {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
     }
 }
 
 @media (max-width: 991px) {
+
     header,
     header.stiky {
         padding: 10px 20px;
@@ -1170,6 +1170,10 @@ hr {
         padding: 20px 0 40px 50px;
     }
 
+    .action_ll_wthp {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     /* SECCION NOSOTROS */
     .testimonials .content_textimonials .caja_testimonial .imgCT {
         font-size: 75px;
@@ -1266,27 +1270,26 @@ hr {
     }
 
     span.icono_btn_maps {
-        font-size: 11px
+        font-size: 12px
+    }
+
+    .aR_btn_map {
+        display: grid;
+        grid-template-columns: 1fr 10fr 1fr;
     }
 
     .btn_maps {
-        font-size: 10px
-    }
-
-    .btn_maps:before {
-        border-top: 12px solid transparent;
-        border-bottom: 12px solid transparent;
-        margin-left: 110px;
-    }
-
-    .btn_maps:hover:before {
-        margin-left: 126px;
+        font-size: 13px
     }
 
     .detalles_oficina span.icono {
         font-size: 16px;
     }
 
+    .action_ll_wthp {
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+    }
 
     /* SECCION NOSOTROS */
     .testimonials .content_textimonials {
@@ -1317,25 +1320,31 @@ hr {
     }
 }
 
-@media (max-width: 297px) {
-    .detalles_oficina_button {
-        margin: 0;
+@media (max-width: 375px) {
+    .aR_btn_map {
+        display: grid;
+        grid-template-columns: 1fr 9fr 1fr;
     }
+}
 
-    .btn_maps {
-        width: 100%;
-        font-size: 13px;
-        transition: 0.5s;
+@media (max-width: 320px) {
+    .aR_btn_map {
+        display: grid;
+        grid-template-columns: 1fr 7fr 1fr;
     }
+}
 
-    span.icono_btn_maps,
-    .btn_maps:before {
-        display: none
-    }
+@media (max-width: 251px) {
 
-    .action_ll_wthp {
+    .action_ll_wthp,
+    .aR_btn_map {
         grid-template-columns: 1fr;
         grid-row-gap: 10px;
         margin-bottom: 10px
+    }
+
+    .icono_btn_maps,
+    .punta_btn_map {
+        display: none;
     }
 }

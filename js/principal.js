@@ -47,6 +47,23 @@ document.getElementById('item_cinco').addEventListener('click', () => {
 	document.querySelector('.navigation_items').classList.toggle('active');
 });
 
+/* ACCIONES DE LOS BOTONES DE LA SECCION DE SERVICIOS */
+// Houston
+document.getElementById('dirHouston').addEventListener('click', () => {
+	window.open('https://goo.gl/maps/PuFPMeA6s2KW2REM9', '_blank');
+});
+
+// Irving
+document.getElementById('dirDallasIrving').addEventListener('click', () => {
+	window.open('https://goo.gl/maps/hjcomtr28RXTWPFu6', '_blank');
+});
+
+// Austin
+document.getElementById('dirAustin').addEventListener('click', () => {
+	window.open('https://goo.gl/maps/zDugBL3TdLFNhBer6', '_blank');
+});
+
+
 /* BOTONES DE LOS MAPAS */
 // Austin
 const btn_map_austin = document.getElementById('btn_map_austin');
