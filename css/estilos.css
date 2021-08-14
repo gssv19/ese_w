@@ -224,11 +224,11 @@ section {
 }
 
 .fila_servicio .img_servicio img {
-    box-shadow: 0px 10px 10px -5px var(--text_grey);
+    box-shadow: 0px 10px 10px -5px var(--text_grey_shadow);
 }
 
 .fila_servicio_par .img_servicio img {
-    box-shadow: 0px 10px 10px -5px var(--text_grey);
+    box-shadow: 0px 10px 10px -5px var(--text_grey_shadow);
 }
 
 .fila_servicio .info_servicio {
@@ -265,7 +265,7 @@ section {
 .fila_servicio_par .info_servicio {
     position: relative;
     background: var(--color_white);
-    box-shadow: -10px 10px 30px -3px var(--text_grey);
+    box-shadow: -10px 10px 30px -3px var(--text_grey_shadow);
     right: -40px;
     padding: 50px;
     text-align: justify;
@@ -1062,7 +1062,7 @@ hr {
 
     .fila_servicio .img_servicio img,
     .fila_servicio_par .img_servicio img {
-        box-shadow: 0px 10px 10px -5px var(--text_grey);
+        box-shadow: 0px 10px 10px -5px var(--text_grey_shadow);
     }
 
     .fila_servicio .info_servicio,
@@ -1071,7 +1071,7 @@ hr {
         left: 0px;
         top: -100px;
         margin: auto;
-        box-shadow: 0px 10px 30px -5px var(--text_grey);
+        box-shadow: 0px 10px 30px -5px var(--text_grey_shadow);
     }
 
     .fila_servicio_par {
