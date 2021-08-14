@@ -8,7 +8,8 @@
     --color_dark: #1d2231;
     --color_desabilitado: rgba(96, 125, 139, 1);
     /*--text_grey: #8390a2;*/
-    --text_grey: #525869;
+    --text_grey: rgba(82, 88, 105, 1);
+    --text_grey_shadow: rgba(82, 88, 105, 0.5);
     --title_services: rgba(33, 84, 160, 1);
     --color_white: rgba(255, 255, 255, 1);
     --color_amarillo: rgba(255, 255, 0, 1);
@@ -233,7 +234,7 @@ section {
 .fila_servicio .info_servicio {
     position: relative;
     background: var(--color_white);
-    box-shadow: 10px 10px 30px -3px var(--text_grey);
+    box-shadow: 10px 10px 30px -3px var(--text_grey_shadow);
     left: -40px;
     padding: 50px;
     text-align: justify;
@@ -360,9 +361,17 @@ section {
 }
 
 .contacto_telefono .contacto_copiarDir:hover {
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     border: 1px solid var(--color_copiarDir);
     color: var(--color_copiarDir);
+    transition: 0.5s;
+}
+
+.contacto_telefono .contacto_llamada:active,
+.contacto_telefono .contacto_whatsapp:active,
+.contacto_telefono .contacto_copiar:active,
+.contacto_telefono .contacto_copiarDir:active {
+    transform: scale(0.9);
     transition: 0.5s;
 }
 
@@ -628,6 +637,12 @@ span.icono_btn_maps {
 .map_whatsapp:hover {
     background: var(--color_whatsapp);
     color: var(--color_white);
+    transition: 0.5s;
+}
+
+.map_llamada:active,
+.map_whatsapp:active {
+    transform: scale(0.9);
     transition: 0.5s;
 }
 
