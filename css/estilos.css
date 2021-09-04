@@ -559,6 +559,19 @@ span.icono_btn_maps {
 
 .detalles_oficina span.detalle {
     color: var(--text_grey);
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+}
+
+.detalles_oficina span.detalle:hover {
+    color: var(--title_services);
+    transition: 0.5s;
+}
+
+.detalles_oficina span.detalle:active {
+    font-size: 15.5px;
+    transition: 0.5s;
 }
 
 .aR_btn_map {
