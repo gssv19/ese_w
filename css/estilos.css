@@ -480,8 +480,6 @@ section {
     box-shadow: 0 0 0 3px var(--main_color_shadow);
     text-align: left;
     width: 382px;
-    min-width: 382px;
-    max-width: 382px;
 }
 
 .linea_oficinas ul li:nth-child(even) .ofiName {
@@ -493,8 +491,6 @@ section {
     color: var(--color_white);
     box-shadow: 0 0 0 3px var(--main_color_shadow);
     width: 382px;
-    min-width: 382px;
-    max-width: 382px;
 }
 
 div.cy {
@@ -1211,7 +1207,7 @@ hr {
         top: -30px;
         left: 50px;
         right: inherit;
-        min-width: 500px;
+        max-width: 500px;
     }
 
     .linea_oficinas ul li:nth-child(odd) {
@@ -1297,6 +1293,18 @@ hr {
         font-size: 12px;
     }
 
+    .linea_oficinas ul li:nth-child(odd) .ofiName,
+    .linea_oficinas ul li:nth-child(even) .ofiName {
+        top: -30px;
+        left: 50px;
+        right: inherit;
+        width: 87%;
+    }
+
+    div.cy {
+        font-size: 12px;
+    }
+
     .contacto_telefono .contacto_llamada,
     .contacto_telefono .contacto_whatsapp,
     .contacto_telefono .contacto_copiar,
@@ -1376,6 +1384,18 @@ hr {
     .aR_btn_map {
         display: grid;
         grid-template-columns: 1fr 9fr 1fr;
+    }
+
+    .linea_oficinas ul li:nth-child(odd) .ofiName,
+    .linea_oficinas ul li:nth-child(even) .ofiName {
+        top: -30px;
+        left: 50px;
+        right: inherit;
+        width: 82%;
+    }
+
+    div.cy {
+        font-size: 10px;
     }
 }
 
