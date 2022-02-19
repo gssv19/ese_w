@@ -389,10 +389,6 @@ section {
     transition: 0.5s;
 }
 
-.not_aviable {
-    display: none;
-}
-
 /*****************************************************************************
 *                             SECCION DE OFICINAS                            *
 *****************************************************************************/
@@ -998,7 +994,6 @@ hr {
 }
 
 @media (max-width: 991px) {
-
     header,
     header.stiky {
         padding: 10px 20px;
