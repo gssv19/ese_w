@@ -1209,6 +1209,7 @@ hr {
         top: -30px;
         left: 50px;
         right: inherit;
+        width: 400px;
         max-width: 500px;
     }
 
@@ -1393,7 +1394,7 @@ hr {
         top: -30px;
         left: 50px;
         right: inherit;
-        width: 82%;
+        width: 85%;
     }
 
     div.cy {
@@ -1405,6 +1406,14 @@ hr {
     .aR_btn_map {
         display: grid;
         grid-template-columns: 1fr 7fr 1fr;
+    }
+
+    .linea_oficinas ul li:nth-child(odd) .ofiName,
+    .linea_oficinas ul li:nth-child(even) .ofiName {
+        top: -30px;
+        left: 50px;
+        right: inherit;
+        width: 82%;
     }
 }
 
