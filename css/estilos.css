@@ -389,6 +389,9 @@ section {
     transition: 0.5s;
 }
 
+.not_aviable {
+    display: none;
+}
 
 /*****************************************************************************
 *                             SECCION DE OFICINAS                            *
@@ -675,9 +678,9 @@ span.icono_btn_maps {
 }
 
 /*****************************************************************************
-*                           SECCION DE TESTIMONIOS                           *
+*                      SECCION DE NOSOTROS COMO EMPRESA                      *
 *****************************************************************************/
-.testimonials {
+.abaut_us {
     background: url(../imagenes/inicio_fondo.png);
     background-size: cover;
 }
@@ -687,14 +690,14 @@ span.icono_btn_maps {
     color: #FFF;
 }
 
-.testimonials .content_textimonials {
+.abaut_us .content_abaut_us {
     display: grid;
     grid-template-columns: repeat(auto-fill, 32%);
     grid-gap: 2%;
     justify-content: center;
 }
 
-.testimonials .content_textimonials .caja_testimonial {
+.abaut_us .content_abaut_us .caja_abaut_us {
     padding: 40px;
     background: #FFF;
     display: flex;
@@ -702,12 +705,12 @@ span.icono_btn_maps {
     flex-direction: column;
 }
 
-.testimonials .content_textimonials .caja_testimonial .imgCT {
+.abaut_us .content_abaut_us .caja_abaut_us .imgCT {
     font-size: 90px;
     color: var(--color_button_hover);
 }
 
-.testimonials .content_textimonials .caja_testimonial .imgCT img {
+.abaut_us .content_abaut_us .caja_abaut_us .imgCT img {
     position: absolute;
     top: 0;
     left: 0;
@@ -716,21 +719,25 @@ span.icono_btn_maps {
     object-fit: cover;
 }
 
-.testimonials .content_textimonials .caja_testimonial .textST {
+.abaut_us .content_abaut_us .caja_abaut_us .textST {
     text-align: center;
 }
 
-.testimonials .content_textimonials .caja_testimonial .textST p {
+.abaut_us .content_abaut_us .caja_abaut_us .textST p {
     color: #666;
-    font-style: italic;
+    text-align: justify;
+    font-size: 16px;
+    letter-spacing: 0.25px;
 }
 
-.testimonials .content_textimonials .caja_testimonial .textST li {
+.abaut_us .content_abaut_us .caja_abaut_us .textST li {
     color: #666;
     text-align: left;
+    font-size: 16px;
+    letter-spacing: 0.25px;
 }
 
-.testimonials .content_textimonials .caja_testimonial .textST h3 {
+.abaut_us .content_abaut_us .caja_abaut_us .textST h3 {
     margin: 20px 0;
     color: var(--main_color);
     font-size: 1em;
@@ -803,7 +810,7 @@ section.fullP {
 }
 
 .contactForm .caja_imput input[type="submit"]:hover {
-    background: var(--color_button_hover));
+    background: var(--color_button_hover);
     letter-spacing: 5px;
     transition: 0.5s;
 }
@@ -1134,13 +1141,13 @@ hr {
     }
 
     /* SECCION NOSOTROS */
-    .testimonials .content_textimonials {
+    .abaut_us .content_abaut_us {
         grid-template-columns: repeat(auto-fill, 48%);
         grid-gap: 2%;
         margin-bottom: 90px;
     }
 
-    .testimonials .content_textimonials .caja_testimonial {
+    .abaut_us .content_abaut_us .caja_abaut_us {
         padding: 20px;
     }
 
@@ -1223,12 +1230,12 @@ hr {
     }
 
     /* SECCION NOSOTROS */
-    .testimonials .content_textimonials .caja_testimonial .imgCT {
+    .abaut_us .content_abaut_us .caja_abaut_us .imgCT {
         font-size: 75px;
     }
 
-    .testimonials .content_textimonials .caja_testimonial .textST li,
-    .testimonials .content_textimonials .caja_testimonial .textST p {
+    .abaut_us .content_abaut_us .caja_abaut_us .textST li,
+    .abaut_us .content_abaut_us .caja_abaut_us .textST p {
         font-size: 14px;
     }
 
@@ -1352,16 +1359,16 @@ hr {
     }
 
     /* SECCION NOSOTROS */
-    .testimonials .content_textimonials {
+    .abaut_us .content_abaut_us {
         grid-template-columns: repeat(auto-fill, 100%);
     }
 
-    .testimonials .content_textimonials .caja_testimonial .imgCT {
+    .abaut_us .content_abaut_us .caja_abaut_us .imgCT {
         font-size: 60px;
     }
 
-    .testimonials .content_textimonials .caja_testimonial .textST li,
-    .testimonials .content_textimonials .caja_testimonial .textST p {
+    .abaut_us .content_abaut_us .caja_abaut_us .textST li,
+    .abaut_us .content_abaut_us .caja_abaut_us .textST p {
         font-size: 12px;
     }
 
